@@ -1,0 +1,523 @@
+/* Remove extra spacing between elements */
+*[class*="row"], *[class*="col"], *[class*="grid"], *[class*="section"] {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ensure images and videos adapt to full width */
+img, video {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Remove other unwanted visual effects */
+*[class*="sidebar"], *[class*="ads"], *[class*="banner"] {
+    display: none !important;
+}
+
+/* REPLACE ABCSERIF WITH ABCSANS ACROSS THE SITE ---------------------------------------- */
+body, * {
+    font-family: abcsans !important; /* Apply abcsans font to all elements */
+}
+
+/* HIDE WEATHER SECTION ----------------------------------- */
+.Home_headerWeather__FDjET {
+    display: none !important;
+}
+
+/* HIDE THE TAGS ---------------------------------------- */
+
+/* Hide the container holding the tags */
+.Panel_content__qJqjK.Layout_tags__kO4ZO.LiveCard_tagsPanel__4FRN3 {
+    display: none !important; /* Completely hides the tags container */
+}
+
+/* Hide individual tag elements if needed (extra redundancy) */
+.CardTagList_tags__dheC7,
+.RichCard_tags__WEQ_K,
+.RichCard_tag__2i1vk {
+    display: none !important; /* Ensures all tag-related elements are hidden */
+}
+
+/* Hide the button around some card tags */
+.Tag_tag__TMEI2 {
+    border-radius: 0 !important; /* Removes any roundness */
+    padding: 0 !important;       /* Reset padding if contributing */
+    box-shadow: none !important; /* Remove any shadow effects */
+    background-color: transparent !important; /* Removes the background color */
+    border: none !important;     /* Remove any border */
+}
+
+/* Hide the button tags at the top of articles */
+.NewsContentLabels_labels__DoXtv {
+  display: none !important;
+}
+
+
+.Panel_content__qJqjK.Layout_related__zFdTc {
+    border: none !important; /* Removes the border completely */
+}
+
+
+/* UPDATE FONT SIZE, COLOR AND LINE HEIGHT FOR HEADLINES ---------------------------------------- */
+
+/* Target the headline container for Top Stories */
+.TopStoriesCard_heading__aJN6c {
+    font-size: 20px !important; /* Set font size to 20px */
+    line-height: 24px !important; /* Set line height to 24px */
+}
+
+h1,
+h2 {
+  color: #000 !important;
+}
+
+
+
+/* HIDE THE DOWNLOAD ABC NEWS APP AD ---------------------------------------- */
+
+/* Target the ad banner container */
+.Banner_banner__rWW3l.Home_banner__Ul6JB {
+    display: none !important; /* Completely hide the ad */
+}
+
+/* HIDE LEGACY BANNER CONTAINER AND REMOVE GAP ------------------------ */
+.Home_legacyBannerContainer__HcXZB {
+    display: none !important; /* Completely hide the banner container */
+}
+
+/* CORRECT TOP STORIES ------------------------ */
+/* Reset conflicting rules for Top Stories layout */
+.TopStoriesCard_layout__raGCy {
+    display: flex !important; /* Ensure flex layout is enforced */
+    flex-direction: row !important; /* Align image and text side by side */
+    align-items: flex-start !important; /* Align content at the top */
+    gap: 1rem !important; /* Add spacing between image and text */
+    width: 100% !important; /* Ensure full width */
+}
+
+/* Ensure the image container aligns correctly */
+.TopStoriesCard_imageContainer__bgUMo {
+    order: 1 !important; /* Image comes first */
+    flex: 0 0 auto !important; /* Image maintains its natural size */
+    max-width: 20% !important; /* Restrict the width of the image container */
+}
+
+/* Ensure the content container aligns correctly */
+.TopStoriesCard_contentContainer__o0__u {
+    order: 2 !important; /* Content comes second */
+    flex: 1 1 auto !important; /* Allow text to fill the remaining space */
+    max-width: 80% !important; /* Adjust content width */
+}
+
+/* Remove extra margins and paddings from other elements */
+.TopStoriesCard_heading__aJN6c,
+.TopStoriesCard_hatAboveHeadline__gL4jg,
+.TopStoriesCard_hat__v5XYi {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+
+.TopStoriesCard_contentContainer__o0__u {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.TopStoriesCard_hatAboveHeadline__gL4jg a p {
+    color: #6c757d !important; /* Medium gray for reduced prominence */
+}
+
+.Typography_base__sj2RP {
+  color: #484b51 !important;
+}
+
+
+/* HIDE TYPING INDICATOR IN LIVE SECTION ------------------------ */
+.Label_label__c9N51.TypingIndicator_typingIndicator__Vhyd9.LiveCard_typingIndicatorHat__YuaiT {
+    display: none !important;
+}
+
+/* HIDE LIVE LABEL SECTION ---------------------------------------- */
+.LiveLabel_container__Kw2ic {
+    display: none !important;
+}
+
+/* HIDE VIDEO SHORTS SECTION ------------------------------------- */
+#videoShorts {
+    display: none !important;
+}
+
+/* HIDE FOR YOU FEEDS SECTION ------------------------------------- */
+.Home_forYouFeeds__4ntGm {
+    display: none !important;
+}
+
+/* HIDE TODAY'S TOPICS SECTION ------------------------------------ */
+.Home_todaysTopics__rZ8dJ {
+    display: none !important;
+}
+
+/* HIDE MORE NEWS SECTION ----------------------------------------- */
+#moreNews {
+    display: none !important;
+}
+
+/* HIDE ALL SIDE SCROLLING RAIL SECTIONS ----------------------------------------- */
+div.Rail_root__6ZyTY.Rail_sideScrolling__NSZ3g {
+    display: none !important;
+}
+
+/* HIDE RAIL FOOTER SECTION ---------------------------------------- */
+div.Rail_footer___j3Fi {
+    display: none !important;
+}
+
+/* MASTEHEAD HEADER COLOR IN BLACK ---------------------------------------- */
+
+/* Force the entire masthead background to black */
+.Masthead_mastheadBox__qgV4D,
+.Masthead_inner__content,
+.Masthead_container,
+.Masthead_container > * {
+    background-color: #000000 !important; /* Black background */
+    color: white !important; /* Ensure text contrast */
+}
+
+/* Fix for any hidden or transparent sections */
+.Masthead_mastheadBox__qgV4D *,
+.Masthead_inner__content * {
+    background-color: transparent !important; /* Allow background color to apply */
+    color: white !important;
+}
+
+/* Style text links to match */
+.Masthead_nav__FLrmL a,
+.Masthead_inner__content a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.Masthead_nav__FLrmL a:hover,
+.Masthead_inner__content a:hover {
+    color: #e5e5e5 !important; /* Hover effect */
+    text-decoration: underline !important;
+}
+
+/* Logo fixes */
+.Masthead_logo__Logo img {
+    max-height: 50px !important;
+    padding-right: 20px !important;
+    background-color: transparent !important;
+}
+
+/* General padding and alignment fixes */
+.Masthead_mastheadBox__qgV4D {
+    padding: 10px 20px !important;
+    box-shadow: none !important;
+}
+
+.Masthead_container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Remove any box shadows or borders */
+.Masthead_mastheadBox__qgV4D,
+.Masthead_inner__content {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.Typography_base__sj2RP.SearchButton_searchText__s9Zk2 {
+  visibility: hidden; /* Hide original text 'Search the News, stores & people'*/
+  position: relative;
+}
+
+.Typography_base__sj2RP.SearchButton_searchText__s9Zk2::after {
+  content: "Search"; /* Replace with new text 'Search'*/
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Button_root__UZ8td.NavBar_login__5PigM {
+    display: none !important; /* Hide the Log In button */
+}
+
+/* SET FULL-SCREEN MENU OVERLAY TO DARK GREY ------------------- */
+.MegaMenu_megaMenu__OKIqw.MegaMenu_isOpen__HXTFt {
+    background-color: #2e2e2e !important; /* Dark grey background */
+    opacity: 1 !important; /* Fully opaque */
+    color: white !important; /* Ensure text remains white */
+}
+
+/* HIDE LOGIN CARD IN MENU OVERLAY ------------------------ */
+.Panel_root__dh8kN.LoginCard_card__PtI2W {
+    display: none !important;
+}
+
+/* REMOVE HOVER OUTLINE FROM MENU BUTTONS ------------------------ */
+.Button_secondary__Vld8_:hover,
+.Button_primary__CwtEz:hover,
+.Button_linkButton__vG7s7:hover,
+.NavigationItem_navItemLink__bLRg2:hover {
+    box-shadow: none !important; /* Removes the shadow effect */
+    outline: none !important;    /* Removes any outline */
+}
+
+
+/* HIDE MENU FOOTER IN OVERLAY ------------------------ */
+.MenuFooter_footer__2EXCv {
+    display: none !important;
+}
+
+/* HIDE MY LOCATION ICON ------------------------ */
+.Rail_headerControls__h5SH7 {
+    display: none !important;
+}
+
+.RailCard_cardLabel__xEdL6 {
+    display: none !important;
+}
+
+
+/* LATEST NEWS SECTION MORE NEWS BUTTON ------------------------ */
+
+.LatestStories_linkWrapper__laTTv > a {
+    text-align: left !important; /* Align the text to the left */
+    margin-left: 0 !important; /* Ensure no left margin */
+    margin-right: auto !important; /* Reset any right margin */
+}
+
+
+/* LATEST NEWS SECTION CHANGE ORDERING ------------------------ */
+
+.GenericCard_contentContainer__ci_1v {
+    display: flex !important; /* Ensure flexbox layout */
+    flex-direction: column !important; /* Stack vertically */
+}
+
+.GenericCard_headingContainer__NAPsW {
+    order: 1 !important; /* Move title first */
+    margin-bottom: 0.5rem !important; /* Add some space below title */
+}
+
+.GenericCard_hatTimestamp__WkCkP,
+.DynamicTimestamp_displayDate__Y3t35 {
+    order: 2 !important; /* Move timestamp second */
+    margin-bottom: 0.5rem !important; /* Add space below timestamp */
+}
+
+.CardTag_container__uoMZ7 {
+    order: 3 !important; /* Move topic last */
+    margin-top: 0 !important; /* Remove unnecessary top margin */
+}
+
+/* HIDE LOCAL EMERGENCIES AND TODAY'S TOPICS SECTION ------------------------------------ */
+.Home_newsLocalEmergenciesTodaysTopics__uKbO1 {
+    display: none !important; /* Completely hides the section */
+}
+
+/* HIDE THE BIG PICTURE SECTION ------------------------------------ */
+.Home_theBigPicture__DGTLm {
+    display: none !important; /* Completely hides the section */
+}
+
+
+/* HIDE SHARE BANNER IN ARTICLE MAIN ------------------------------------ */
+.ShareBanner_container__OX63I.Article_main___guM5 {
+    display: none !important;
+}
+
+/* HIDE RELATED TOPICS SECTION ------------------------------------ */
+[data-component="RelatedTopics"] {
+    display: none !important;
+}
+
+/* HIDE ARTICLE SIDEBAR ------------------------------------ */
+aside.Article_aside__OAs_Q.isSidebar {
+    display: none !important;
+}
+
+/* HIDE NEWSLETTER SECTION ------------------------------------ */
+[data-component="Newsletter"] {
+    display: none !important;
+}
+
+/* HIDE SHARE UTILITY SECTION ------------------------------------ */
+div[data-component="ShareUtility"] {
+    display: none !important;
+}
+
+/* HIDE ARTICLE ASIDE SECTION ------------------------------------ */
+aside.Article_layout__fHMrs.Article_hidePrint__pUZjb {
+    display: none !important;
+}
+
+/* HIDE NEWS FOOTER SECTION ------------------------------------ */
+[data-component="NewsFooter"] {
+    display: none !important;
+}
+
+/* HIDE FIXED HEADER SECTION ------------------------------------ */
+[data-component="FixedHeader"] {
+    display: none !important;
+}
+
+/* HIDE LOCAL NEWS FINDER SECTION ------------------------------------ */
+aside.ContentAlignment_marginBottom__4H_6E.ContentAlignment_overflowAuto__c1_IL.ContentAlignment_outdentDesktop__ijbiK.LegacyWysiwyg_wysiwyg___2JFa[data-component="LegacyWysiwyg"][title="Find more local news"] {
+    display: none !important; /* Completely hide the aside element */
+}
+
+/* HIDE SHARE BANNER SECTION ---------------------------------------- */
+.Article_hidePrint__pUZjb {
+    display: none !important; /* Completely hides the aside section */
+}
+
+/* HIDE "GOT A NEWS TIP?" SECTION ---------------------------------------- */
+#anchor-101002746 {
+    display: none !important; /* Completely hides the section */
+}
+
+/* REMOVE BORDER-BOTTOM FROM LINKLIST ITEMS ----------------------------- */
+.LinkList_listItem__NLiw1.LinkList_card__r58wM {
+    border-bottom: 0 !important; /* Overrides border-bottom to 0px */
+}
+
+
+/* MAKE FOOTER TRRETURN TO TOP SECTION BACKGROUND WHITE AND TEXT BLACK WITH INVERTED ICON COLORS */
+.Section_section__2Q_Nz.Section_contained__ps5Uu.Section_isFuture__LBHyy {
+    background-color: white !important; /* Sets the background to white */
+    color: black !important; /* Ensures text color is black */
+}
+
+.Section_section__2Q_Nz.Section_contained__ps5Uu.Section_isFuture__LBHyy a {
+    color: black !important; /* Ensures links are also black */
+}
+
+.Section_section__2Q_Nz.Section_contained__ps5Uu.Section_isFuture__LBHyy svg {
+    filter: invert(100%) !important; /* Inverts colors of the SVG */
+}
+
+
+
+/* OVERRIDE HIDDEN STYLE FOR PAGE HEADER OR RAIL HEADERS -------------------------- */
+.ChannelWeb_hasSubbanner__rIgoz.ChannelWeb_isFuture__I5QaJ.Section_section__2Q_Nz.Section_compact__IATXV.Section_contained__ps5Uu.Section_isFuture__LBHyy {
+    display: block !important;
+    visibility: visible !important;
+    background: transparent !important;
+}
+
+.Subbanner_subbanner__WWDEd.ChannelWeb_banner__CJIP3 {
+    display: block !important;
+    visibility: visible !important;
+    background: transparent !important;
+}
+
+.Rail_header__cjOJE.Subbanner_sectionHeader__u7JfG {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important; /* Ensure no opacity hiding it */
+    height: auto !important; /* Reset height in case it's set to 0 */
+    overflow: visible !important; /* Allow content to show */
+    position: static !important; /* Avoid potential absolute/relative hiding */
+}
+
+/* HIDE EXPLAINERS SECTION --------------------------------------------- */
+#anchor-9053458 {
+  display: none !important;
+}
+
+/* HIDE ANALYSIS BY BUYLINES --------------------------------------------- */
+.CardTag_author__1g5xG {
+  display: none !important;
+}
+
+/* ENSURE PROPER SPACING (MARGIN/PADDING) BETWEEN GRID ITEMS FOR LAYOUT CONSISTENCY --------*/
+.Grid_row__pEgHw {
+  gap: 20px;
+}
+
+/* CORRECT SITE PREFERENCE / LABELS TO BE WHITE COLOR FONT --------------------------------------------- */
+
+.ViewSwitcher_option__GUlFI.ViewSwitcher_checked__6fbyO {
+    color: white !important; /* Ensure the text color is white */
+    -webkit-text-fill-color: white !important; /* Covers additional rendering cases in browsers like Safari */
+}
+
+/* CORRECT VERTICAL BASELINE FOR TIMESTAMP AND TOPIC IN ALL LATEST NEWS COMPONENTS ------ */
+
+/* Shared styling for parent containers */
+.DetailCard_hat__n8QSK,
+.GenericCard_hat__Xa_NB {
+    display: flex;
+    align-items: baseline; /* Aligns the baseline of children */
+    gap: 8px; /* Adds space between the topic and timestamp */
+}
+
+/* Shared styling for topic container */
+.Tag_container__7_5W6 {
+    display: inline-block; /* Ensures the topic stays inline */
+}
+
+/* Shared styling for timestamp */
+.DynamicTimestamp_displayDate__Y3t35,
+.GenericCard_hatTimestamp__WkCkP {
+    display: inline-block; /* Ensures the timestamp stays inline */
+}
+
+
+
+
+/* REORDER HEADING > TIMESTAMP > PREVIEW TEXT IN SOME SECTIONS ------- */
+
+
+/* 1) Turn the entire DetailCard into a 2-column grid:
+     Left column = thumbnail (image),
+     Right column = stacked text (headline → hat → preview). */
+.DetailCard_card__oooSN {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+  /* three rows on the right: heading in row 1, hat in row 2, preview in row 3 */
+  grid-template-rows: auto auto auto !important;
+  grid-template-areas:
+    "thumbnail heading"
+    "thumbnail hat"
+    "thumbnail preview" !important;
+
+  /* add a little space between the columns if you like */
+  column-gap: 1rem !important; 
+}
+
+/* 2) “Flatten” the .DetailCard_content__UkuZe so its children
+      (the heading and preview text) become direct grid items
+      alongside .DetailCard_hat__n8QSK, which is outside it. */
+.DetailCard_content__UkuZe {
+  display: contents !important;
+}
+
+/* 3) Assign each piece to its grid area in the new layout. */
+.DetailCard_thumbnail__Lh7uN {
+  grid-area: thumbnail !important;
+}
+
+.DetailCard_heading__n9qKz {
+  grid-area: heading !important;
+}
+
+.DetailCard_hat__n8QSK {
+  grid-area: hat !important;
+}
+
+.DetailCard_synopsis__qszdA {
+  grid-area: preview !important;
+}
+
+.paragraph_paragraph___QITb {
+  color: #000 !important;
+}

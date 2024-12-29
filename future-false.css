@@ -20,6 +20,25 @@ body, * {
     font-family: abcsans !important; /* Apply abcsans font to all elements */
 }
 
+/* UPDATE FONT SIZE, COLOR AND LINE HEIGHT FOR HEADLINES ---------------------------------------- */
+
+/* Target the headline container for Top Stories */
+.TopStoriesCard_heading__aJN6c {
+    font-size: 20px !important; /* Set font size to 20px */
+    line-height: 24px !important; /* Set line height to 24px */
+}
+
+/* Force all headings (h1, h2, h3) to be black */
+h1, h2, h3 {
+    color: black !important; /* Set text color to black */
+    -webkit-text-fill-color: black !important; /* For additional compatibility */
+}
+
+/* Exclude specific elements like Typography_base__sj2RP when not used with h1, h2, or h3 */
+.Typography_base__sj2RP:not(h1):not(h2):not(h3) {
+    color: inherit !important; /* Retain the inherited or default color for non-headings */
+}
+
 /* HIDE WEATHER SECTION ----------------------------------- */
 .Home_headerWeather__FDjET {
     display: none !important;
@@ -58,19 +77,6 @@ body, * {
     border: none !important; /* Removes the border completely */
 }
 
-
-/* UPDATE FONT SIZE, COLOR AND LINE HEIGHT FOR HEADLINES ---------------------------------------- */
-
-/* Target the headline container for Top Stories */
-.TopStoriesCard_heading__aJN6c {
-    font-size: 20px !important; /* Set font size to 20px */
-    line-height: 24px !important; /* Set line height to 24px */
-}
-
-h1,
-h2 {
-  color: #000 !important;
-}
 
 
 
@@ -126,9 +132,19 @@ h2 {
     flex-direction: column-reverse;
 }
 
+
+
+/* Apply medium gray color to all SubjectTag components */
+a[data-component="SubjectTag"] {
+    color: #6c757d !important; /* Medium gray for reduced prominence */
+}
 .TopStoriesCard_hatAboveHeadline__gL4jg a p {
     color: #6c757d !important; /* Medium gray for reduced prominence */
 }
+a[data-component="SubjectTag"] p {
+    color: #6c757d !important; /* Ensure nested <p> elements also inherit the medium gray color */
+}
+
 
 .Typography_base__sj2RP {
   color: #484b51 !important;

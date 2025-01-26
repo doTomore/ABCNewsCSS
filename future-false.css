@@ -58,12 +58,9 @@ h1, h2, h3 {
     display: none !important; /* Completely hides the tags container */
 }
 
-/* Hide individual tag elements if needed (extra redundancy) */
-.CardTagList_tags__dheC7,
-.RichCard_tags__WEQ_K,
-.RichCard_tag__2i1vk {
-    display: none !important; /* Ensures all tag-related elements are hidden */
-}
+
+
+
 
 /* Hide the button around some card tags */
 .Tag_tag__TMEI2 {
@@ -341,6 +338,12 @@ div.Rail_footer___j3Fi {
     margin-top: 0 !important; /* Remove unnecessary top margin */
 }
 
+[data-component="SubjectTag"],
+[data-component="InfoSourceTag"] {
+    display: none !important; /* Hide elements with these attributes */
+}
+
+
 /* HIDE LOCAL EMERGENCIES AND TODAY'S TOPICS SECTION ------------------------------------ */
 .Home_newsLocalEmergenciesTodaysTopics__uKbO1 {
     display: none !important; /* Completely hides the section */
@@ -482,10 +485,6 @@ aside.ContentAlignment_marginBottom__4H_6E.ContentAlignment_overflowAuto__c1_IL.
   display: none !important;
 }
 
-/* HIDE ANALYSIS BY BUYLINES --------------------------------------------- */
-.CardTag_author__1g5xG {
-  display: none !important;
-}
 
 /* ENSURE PROPER SPACING (MARGIN/PADDING) BETWEEN GRID ITEMS FOR LAYOUT CONSISTENCY --------*/
 .Grid_row__pEgHw {
